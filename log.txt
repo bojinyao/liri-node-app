@@ -1,0 +1,104 @@
+
+===============================
+Command Executed: spotify-this-song,we will we will rock you
+Returned: 
+Artist Name: Queen
+Song Name: We Will Rock You - Remastered 2011
+Link: https://open.spotify.com/track/54flyrjcdnQdco7300avMJ
+Album Name: News Of The World (Deluxe Remastered Version)
+
+===============================
+Command Executed: spotify-this-song,I took a pill in Ibiza
+Returned: 
+Artist Name: Mike Posner, Seeb
+Song Name: I Took A Pill In Ibiza - Seeb Remix
+Link: https://open.spotify.com/track/1MtUq6Wp1eQ8PC6BbPCj8P
+Album Name: At Night, Alone.
+
+===============================
+Command Executed: spotify-this-song
+Returned: 
+===============================
+Command Executed: spotify-this-song
+Returned: 
+===============================
+Command Executed: spotify-this-song
+Returned: 
+===============================
+Command Executed: spotify-this-song
+Returned: 
+===============================
+Command Executed: spotify-this-song
+Returned: 
+Artist Name: Boomboys
+Song Name: I Saw the Sign
+Link: https://open.spotify.com/track/7gbe1RssqCTHztIr5mBNck
+Album Name: Best of Euro Dance Music Hits Songs 90's. Lo Mejor de la Música Dance Dance Eurodance de los 90
+
+===============================
+Command Executed: spotify-this-song
+Returned: 
+Artist Name: Ace of Base
+Song Name: The Sign
+Link: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+Album Name: The Sign (US Album) [Remastered]
+
+===============================
+Command Executed: spotify-this-song,I saw the sign and it opened up my eyes, I saw the sign
+Returned: 
+===============================
+Command Executed: spotify-this-song,I saw the sign and it opened up my eyes, I saw the sign
+Returned: 
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: 
+Returned: 
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: spotify-this-song,"I Want it That Way"
+Returned: 
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album Name: The Hits--Chapter One
+
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: spotify-this-song,"I Want it That Way"
+Returned: 
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album Name: The Hits--Chapter One
+
+===============================
+Command Executed: do-what-it-says
+Returned: 
+===============================
+Command Executed: spotify-this-song,I Want it That Way
+Returned: 
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album Name: The Hits--Chapter One
