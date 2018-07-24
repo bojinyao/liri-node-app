@@ -6,13 +6,16 @@ const fs = require("fs");
 const keys = require("./keys.js");
 const Spotify = require("node-spotify-api");
 const Twitter = require("twitter");
+const moment = require("moment");
+const request = require("request");
 
 //==========
 // variables
 //==========
 const DOWHATITSAYSFILE = "./random.txt";
-const ACTIVITYLOGS = "./log.txt";
-const LOGTYPE = "utf8";
+const ACTIVITYLOGFILE = "./log.txt";
+const UTF8 = "utf8";
+const OMDBKEY = `f59e23b9`;
 
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
@@ -27,9 +30,11 @@ function Main(args) {
     let arg1 = args[2];
     let arg2 = args[3];
 
+    let now = moment();
     writeToLog(`\n===============================`);
-    writeToLog(`\nCommand Executed: ${args.slice(2)}`);
-    writeToLog(`\nReturned: `);
+    writeToLog(`\n${now}`);
+    writeToLog(`\nCommand Parsed: ${args.slice(2)}`);
+    writeToLog(`\nResponse >>> `);
 
     try {
         switch (arg1) {
@@ -52,6 +57,7 @@ function Main(args) {
                 doWhatItSays();
                 break;
             default:
+                writeToLog(`\nUnrecognized Command.\n`);
                 throw "Unrecognized Command.";
 
         }
@@ -65,7 +71,7 @@ function Main(args) {
  * @param {String} msg 
  */
 function writeToLog(msg) {
-    fs.appendFileSync(ACTIVITYLOGS, msg, LOGTYPE);
+    fs.appendFileSync(ACTIVITYLOGFILE, msg, UTF8);
 }
 
 /**
@@ -80,13 +86,17 @@ function myTweets() {
         // console.log(tweets)
         // console.log(`========================`)
         // console.log(response);
-        tweets.forEach(post => {
-            let result = `\n${post.created_at}\nid: ${post.id}\n${post.text}`;
-            writeToLog(result);
-            console.log(result);
-        });
-        console.log(``);
-        writeToLog("\n");
+        if (tweets.length > 0) {
+            tweets.forEach(post => {
+                let result = `\n${post.created_at}\nid: ${post.id}\n${post.text}`;
+                writeToLog(result);
+                console.log(result);
+            });
+            console.log(``);
+            writeToLog("\n");
+        } else {
+            writeToLog("\nNone Returned by Twitter.");
+        }
     })
 }
 
@@ -103,7 +113,7 @@ function spotifyThisSong(target) {
     if (!target) {
         target = "The Sign ace of base";
     }
-    spotify.search({type: 'track', query: target}, (err, data) => {
+    spotify.search({ type: 'track', query: target }, (err, data) => {
         if (err) {
             // console.log(err);
             throw "Problem getting music.";
@@ -121,9 +131,10 @@ function spotifyThisSong(target) {
             console.log(result);
             writeToLog(result);
         } else {
+            writeToLog("\nNone Returned by Spotify.");
             throw "Didn't find anything :(";
         }
-     });
+    })
 }
 
 /**
@@ -140,14 +151,31 @@ function spotifyThisSong(target) {
  * @param {String} target the movie to search for 
  */
 function movieThis(target) {
-
+    if (!target) {
+        target = `Mr.Nobody&y=2009`;
+    }
+    let url = `http://www.omdbapi.com/?apikey=${OMDBKEY}&t=${target}`
+    request({ url: url, json: true }, function (error, response, body) {
+        if (error) {
+            throw "Problem getting movie.";
+        }
+        if (!error && response.statusCode == 200) {
+            let result = `\nTitle: ${body.Title}\nYear: ${body.Year}\nIMDB rating: ${body.Ratings[0].Value}\nRotten Tomatoes rating: ${body.Ratings[1].Value}\nCountry: ${body.Country}\nLanguage: ${body.Language}\nPlot: ${body.Plot}\nActors: ${body.Actors}\n`;
+            // console.log(body);
+            console.log(result);
+            writeToLog(result);
+        }
+    })
 }
 
 /**
  * Using the text inside of random.txt and then use it to call one of LIRI's commands.
  */
 function doWhatItSays() {
-    let command = fs.readFileSync(DOWHATITSAYSFILE, LOGTYPE);
+    let command = fs.readFileSync(DOWHATITSAYSFILE, UTF8);
+    if (command.includes("do-what-it-says")) {
+        throw "Invalid Command in File."
+    }
     // console.log(command);
     let args = command.replace(/["]+/g, '').split(",");
     args.unshift("", "");

@@ -1,6 +1,27 @@
 
 ===============================
-Command Executed: spotify-this-song,we will we will rock you
+Mon Jul 23 2018 21:31:50 GMT-0700
+Command Executed: 
+Returned: 
+Unrecognized Command
+
+===============================
+Mon Jul 23 2018 21:32:09 GMT-0700
+Command Executed: my-tweets
+Returned: 
+Mon Jul 23 07:04:34 +0000 2018
+id: 1021289955962716200
+RT @BarackObama: Congratulations to the @Capitals! This @NHLBlackhawks fan knows what it’s like to lift that cup – and I’m happy for all th…
+Mon Jul 23 07:04:28 +0000 2018
+id: 1021289930020941800
+RT @BarackObama: This week, I’m traveling to Africa for the first time since I left office – a continent of wonderful diversity, thriving c…
+Mon Jul 23 07:03:20 +0000 2018
+id: 1021289645567430700
+testing testing
+
+===============================
+Mon Jul 23 2018 21:33:05 GMT-0700
+Command Executed: spotify-this-song,We will rock you
 Returned: 
 Artist Name: Queen
 Song Name: We Will Rock You - Remastered 2011
@@ -8,35 +29,27 @@ Link: https://open.spotify.com/track/54flyrjcdnQdco7300avMJ
 Album Name: News Of The World (Deluxe Remastered Version)
 
 ===============================
-Command Executed: spotify-this-song,I took a pill in Ibiza
+Mon Jul 23 2018 21:33:53 GMT-0700
+Command Executed: do-what-it-says
 Returned: 
-Artist Name: Mike Posner, Seeb
-Song Name: I Took A Pill In Ibiza - Seeb Remix
-Link: https://open.spotify.com/track/1MtUq6Wp1eQ8PC6BbPCj8P
-Album Name: At Night, Alone.
+===============================
+Mon Jul 23 2018 21:33:53 GMT-0700
+Command Executed: spotify-this-song,I Want it That Way
+Returned: 
+Artist Name: Backstreet Boys
+Song Name: I Want It That Way
+Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album Name: The Hits--Chapter One
 
 ===============================
-Command Executed: spotify-this-song
+Mon Jul 23 2018 21:34:17 GMT-0700
+Command Executed: garbage
 Returned: 
-===============================
-Command Executed: spotify-this-song
-Returned: 
-===============================
-Command Executed: spotify-this-song
-Returned: 
-===============================
-Command Executed: spotify-this-song
-Returned: 
-===============================
-Command Executed: spotify-this-song
-Returned: 
-Artist Name: Boomboys
-Song Name: I Saw the Sign
-Link: https://open.spotify.com/track/7gbe1RssqCTHztIr5mBNck
-Album Name: Best of Euro Dance Music Hits Songs 90's. Lo Mejor de la Música Dance Dance Eurodance de los 90
+Unrecognized Command.
 
 ===============================
-Command Executed: spotify-this-song
+Mon Jul 23 2018 21:36:31 GMT-0700
+Command Parsed: spotify-this-song
 Returned: 
 Artist Name: Ace of Base
 Song Name: The Sign
@@ -44,61 +57,54 @@ Link: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
 Album Name: The Sign (US Album) [Remastered]
 
 ===============================
-Command Executed: spotify-this-song,I saw the sign and it opened up my eyes, I saw the sign
+Mon Jul 23 2018 22:26:08 GMT-0700
+Command Parsed: movie-this
 Returned: 
 ===============================
-Command Executed: spotify-this-song,I saw the sign and it opened up my eyes, I saw the sign
+Mon Jul 23 2018 22:27:03 GMT-0700
+Command Parsed: spotify-this-song
 Returned: 
-===============================
-Command Executed: do-what-it-says
-Returned: 
-===============================
-Command Executed: do-what-it-says
-Returned: 
-===============================
-Command Executed: do-what-it-says
-Returned: 
-===============================
-Command Executed: do-what-it-says
-Returned: 
-===============================
-Command Executed: do-what-it-says
-Returned: 
-===============================
-Command Executed: do-what-it-says
-Returned: 
-===============================
-Command Executed: 
-Returned: 
-===============================
-Command Executed: do-what-it-says
-Returned: 
-===============================
-Command Executed: spotify-this-song,"I Want it That Way"
-Returned: 
-Artist Name: Backstreet Boys
-Song Name: I Want It That Way
-Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
-Album Name: The Hits--Chapter One
+Artist Name: Ace of Base
+Song Name: The Sign
+Link: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+Album Name: The Sign (US Album) [Remastered]
 
 ===============================
-Command Executed: do-what-it-says
+Tue Jul 24 2018 00:48:15 GMT-0700
+Command Parsed: movie-this,The Pink Panther
 Returned: 
-===============================
-Command Executed: spotify-this-song,"I Want it That Way"
-Returned: 
-Artist Name: Backstreet Boys
-Song Name: I Want It That Way
-Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
-Album Name: The Hits--Chapter One
+Title: The Pink Panther
+Year: 2006
+IMDB rating: 5.6/10
+Rotten Tomatoes rating: 22%
+Country: USA, Czech Republic
+Language: English
+Plot: Bumbling Inspector Clouseau must solve the murder of a famous soccer coach and find out who stole the infamous Pink Panther diamond.
+Actors: Steve Martin, Kevin Kline, Jean Reno, Emily Mortimer
 
 ===============================
-Command Executed: do-what-it-says
+Tue Jul 24 2018 00:48:56 GMT-0700
+Command Parsed: movie-this
 Returned: 
+Title: Mr. Nobody
+Year: 2009
+IMDB rating: 7.9/10
+Rotten Tomatoes rating: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
 ===============================
-Command Executed: spotify-this-song,I Want it That Way
+Tue Jul 24 2018 00:59:13 GMT-0700
+Command Parsed: my-tweets
 Returned: 
-Artist Name: Backstreet Boys
-Song Name: I Want It That Way
-Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
-Album Name: The Hits--Chapter One
+Mon Jul 23 07:04:34 +0000 2018
+id: 1021289955962716200
+RT @BarackObama: Congratulations to the @Capitals! This @NHLBlackhawks fan knows what it’s like to lift that cup – and I’m happy for all th…
+Mon Jul 23 07:04:28 +0000 2018
+id: 1021289930020941800
+RT @BarackObama: This week, I’m traveling to Africa for the first time since I left office – a continent of wonderful diversity, thriving c…
+Mon Jul 23 07:03:20 +0000 2018
+id: 1021289645567430700
+testing testing
